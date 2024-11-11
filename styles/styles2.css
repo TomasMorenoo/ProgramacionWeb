@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 header{
     background-color:#F5F5DC;
     padding: 0;
@@ -25,7 +30,20 @@ header{
 .titulo{
     font-size: 3em;;
     padding: 0;;
-    background-color: #F5F5DC;
     font-family: 'playfair display SC';
     color: #4B3D25;
+}
+
+.nav-color{ 
+    background-color: #F5F5DC;
+    color: #4B3D25;
+}
+
+.link{
+    color: #4B3D25;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: purple;
 }
