@@ -11,18 +11,18 @@
     <header>
         <div class="container text-center py-3 d-none d-md-block">
             <div class="row align-items-center">
-                <!-- Columna 1: Título -->
+                <!-- Título -->
                 <div class="col-12 col-md-4 text-start">
                     <h1 class="titulo m-0">Essence.</h1>
                 </div>
-                <!-- Columna 2: Buscador -->
+                <!-- Buscador -->
                 <div class="col-12 col-md-4">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
-                <!-- Columna 3: Íconos -->
+                <!-- Íconos -->
                 <div class="col-12 col-md-4 text-end">
                     <a href="#" class="me-3">
                         <img class="link-foto" src="./images/icons/favorito.png" alt="Favoritos" >
@@ -40,17 +40,17 @@
         <!-- Header para dispositivos móviles -->
         <nav class="navbar fixed-top d-md-none nav-color">
             <div class="container-fluid d-flex justify-content-between align-items-center">
-                <!-- Botón de menú (a la izquierda) -->
+                <!-- Botón de menú -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Título (centrado) -->
+                <!-- Título -->
                 <a class="titulo navbar-brand mx-auto text-center" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">
                     Essence.
                 </a>
 
-                <!-- Botón carrito (a la derecha) -->
+                <!-- Botón carrito -->
                 <a href="pages/carrito.html" class="btn p-0">
                     <img src="./images/icons/carrito-de-compras.png" alt="Carrito" >
                 </a>
@@ -88,7 +88,9 @@
             </div>
         </nav>
 
-        <ul class="nav nav-pills nav-fill">
+        <!-- Barra de navegación --> 
+        
+        <ul class="nav nav-pills nav-fill d-none d-md-flex">
             <li class="nav-item">
                 <a class="nav-link link" aria-current="page" href="#">Inicio</a>
             </li>
@@ -101,8 +103,32 @@
             <li class="nav-item">
                 <a class="nav-link link" href="">Promociones</a>
             </li>
-        </ul>
+        </ul>        
     </header>
+    <section>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/carruselfoto1.jpg" class="d-block w-100 h-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/carruselfoto2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/carruselfoto3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
