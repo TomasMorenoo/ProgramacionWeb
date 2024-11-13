@@ -24,13 +24,13 @@
                 </div>
                 <!-- Íconos -->
                 <div class="col-12 col-md-4 text-end">
-                    <a href="#" class="me-3">
+                    <a href="./pages/favoritos.html" class="me-3" title="mis favoritos">
                         <img class="link-foto" src="./images/icons/favorito.png" alt="Favoritos" >
                     </a>
-                    <a href="#" class="me-3">
+                    <a href="./pages/carrito.html" class="me-3" title="carrito de compra">
                         <img class="link-foto" src="./images/icons/carrito-de-compras.png" alt="Carrito" >
                     </a>
-                    <a href="pages/mycount.html">
+                    <a href="pages/mycount.html" class="me-3"  title="mis datos">
                         <img class="link-foto" src="./images/icons/user.png" alt="Mi Cuenta" >
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                 </a>
 
                 <!-- Botón carrito -->
-                <a href="pages/carrito.html" class="btn p-0">
+                <a href="./pages/carrito.html" class="btn p-0" title="Carrito de compras">
                     <img src="./images/icons/carrito-de-compras.png" alt="Carrito" >
                 </a>
             </div>
@@ -60,24 +60,24 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <a href="./pages/favoritos.html" class="ms-2">
+                        <img src="./images/icons/favorito.png" alt="Favoritos" style="width: 20px;">
+                    </a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index2.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="./pages/pefumes.html">Perfumes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promociones</a>
+                            <a class="nav-link" href="./pages/promociones.html">Promociones</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" href="pages/mycount.html">Mi Cuenta</a>
-                            <a href="pages/favoritos.html" class="ms-2">
-                                <img src="./images/icons/favorito.png" alt="Favoritos" style="width: 20px;">
-                            </a>
                         </li>
                     </ul>
                     <form class="d-flex mt-3" role="search">
@@ -92,33 +92,33 @@
         
         <ul class="nav nav-pills nav-fill d-none d-md-flex">
             <li class="nav-item">
-                <a class="nav-link link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link link" aria-current="page" href="./index2.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link" href="#">Perfumes</a>
+                <a class="nav-link link" href="./pages/perfumes.html">Perfumes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link" href="#">Maquillajes</a>
+                <a class="nav-link link" href="./pages/maquillajes.html">Maquillajes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link" href="">Promociones</a>
+                <a class="nav-link link" href="./pages/promociones.html">Promociones</a>
             </li>
         </ul>        
     </header>
 
     <!-- carousel -->
     
-    <section class="carrusel">
+    <section style="padding-top: 50px;">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/images/carrusel4.png" class="d-block w-100 w-100" alt="...">
+                    <img src="./images/carrusel4.png" class="d-block w-100 img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/pacorabanne.png" class="d-block w-100 " alt="...">
+                    <img src="./images/pacorabanne.png" class="d-block w-100 img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/lancome.jpg" class="d-block w-100 " alt="...">
+                    <img src="./images/lancome.jpg" class="d-block w-100 img-fluid" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -131,39 +131,50 @@
             </button>
         </div>
     </section>
+    
+    
+    
 
     <!-- Prouctos -->
     
     <h3 class="h2">Productos de nuestra marca</h3>
-    <section class="cards">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <img src="images/Deluxe.png" class="img-fluid rounded-start" alt="Essence Deluxe">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Essence Deluxe</h5>
-                        <p class="card-text">Este es un perfume que encarna la sofisticación y exclusividad. Con notas cálidas de ámbar y vainilla, envueltas en un corazón floral de jazmín y rosa, este aroma es perfecto para quienes buscan un toque de elegancia en cada ocasión especial.</p>
+<section class="cards">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="images/Deluxe.png" class="img-fluid rounded-start" alt="Essence Deluxe">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Essence Deluxe</h5>
+                            <p class="card-text">Un perfume que encarna la sofisticación. Con notas cálidas de ámbar y vainilla, envueltas en un corazón floral de jazmín y rosa, este aroma es perfecto para quienes buscan un toque de elegancia en cada ocasión.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Essence Fresh</h5>
-                        <p class="card-text">Fragancia juvenil y vibrante, ideal para quienes aman la frescura y la energía. Sus notas principales de cítricos y manzana verde se combinan con un corazón de flores silvestres, creando un aroma que evoca libertad y dinamismo.</p>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-12 col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Essence Fresh</h5>
+                            <p class="card-text">Fragancia juvenil y vibrante, ideal para quienes aman la frescura y la energía. Sus notas principales de cítricos y manzana verde se combinan con un corazón de flores silvestres, creando un aroma que evoca libertad y dinamismo.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <img src="images/Fresh2.png" class="img-fluid rounded-start" alt="Essence Fresh">
+                    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="images/Fresh2.png" class="img-fluid rounded-start" alt="Essence Fresh">
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
     <footer>
         <div class="container text-center py-3">
             <div class="row">
@@ -175,9 +186,9 @@
                 <div class="col-12 col
                 -md-4">
                     <h5>Visitanos en...</h5>
-                    <a href="#"><img src="./images/icons/facebook.png" alt="Facebook" class="link-foto">Essence.Oficial</a>
-                    <a href="#"><img src="./images/icons/instagram.png" alt="Instagram" class="link-foto">Essence.Oficial</a>
-                    <a href=""><img src="./images/icons/maps.png" alt="Direccion" class="link-foto">Calle falsa 0123, CABA</a>
+                    <a href="https://www.facebook.com/"><img src="./images/icons/facebook.png" alt="Facebook" class="link-foto">Essence.Oficial</a>
+                    <a href="https://www.instagram.com/"><img src="./images/icons/instagram.png" alt="Instagram" class="link-foto">Essence.Oficial</a>
+                    <a href="https://www.google.com.ar/maps/"><img src="./images/icons/maps.png" alt="Direccion" class="link-foto">Calle falsa 0123, CABA</a>
                 </div>
             </div>
         </div>    
