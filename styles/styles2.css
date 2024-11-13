@@ -1,11 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: #4B3D25 !important;
+    transition: transform 0.3s !important;
+}
+
+a:hover{
+    transform: scale(1.1);
 }
 
 header{
@@ -27,6 +33,17 @@ header{
     font-family: 'playfair display SC';
 }
 
+.boton{
+    background-color: transparent;
+    color: #4B3D25;
+    border-color: #4B3D25;
+}
+
+.boton:hover{
+    transform: scale(0.9);
+    border-color: #4B3D25;
+}
+
 .titulo{
     font-size: 3em;;
     padding: 0;;
@@ -39,14 +56,6 @@ header{
     color: #4B3D25;
 }
 
-.link{
-    color: #4B3D25;
-    text-decoration: none;
-}
-
-.link:hover{
-    color: purple;
-}
 
 /* Carrusel de fotos */
 
@@ -79,6 +88,12 @@ header{
 
 }
 
+
+.center{
+    justify-content:space-around;
+}
+
+
 /* Footer */
 
 footer{
@@ -88,3 +103,30 @@ footer{
     padding: 1em;
     margin: 0;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer img{
+    margin: 0.5em;
+}
+
+/* Redes Sociales */
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+}
+
+footer .row img {
+    transition: transform 0.3s; /* Animación suave al pasar el mouse */
+}
+
+footer .row img:hover {
+    transform: scale(1.2); /* Agranda ligeramente al hacer hover */
+}
+
+
