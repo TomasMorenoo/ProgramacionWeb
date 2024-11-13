@@ -47,3 +47,44 @@ header{
 .link:hover{
     color: purple;
 }
+
+/* Carrusel de fotos */
+
+.carrusel{
+    margin: 1.5em 0 1.5em 0;
+}
+
+/* Cards de productos de inicio*/
+
+.h2{
+    font-size: 2em;
+    font-family: 'playfair display SC';
+    color: #4B3D25;
+    text-align: center;
+    margin: 1em;
+}
+
+.card{
+    margin: 1em;
+    padding: 0;
+    border: 1px solid #F5F5DC;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px #888888;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #4B3D25;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+}
