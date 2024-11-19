@@ -144,3 +144,36 @@ footer .row img:hover {
     height: 100%;
     border-radius: 10px;
 }
+
+.row{
+    justify-content: center;
+}
+
+.botones2{
+    display: flex;
+    justify-content: center;
+    gap: 1em ;
+    margin: auto;
+    width: 33% !important;
+    color: white !important;
+    background-color: green;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 1em ;
+}
+
+.botones2:hover{
+    transform: scale(0.9) !important;
+    color:black !important;
+
+}
+
+.Precio{
+    color: rgb(1, 143, 1);
+    font-size: 1em;
+    font-weight: bold;
+
+}
