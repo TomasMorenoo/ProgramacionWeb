@@ -1,0 +1,212 @@
+/* Variables */
+$color-pagina: #d4c285;
+$color-body: white;
+$color-footer: #4B3D25;
+$color-texto: Black;
+$color-precio: rgb(1, 143, 1);
+$link-hover-transform: scale(1.1);
+$fuente-pagina: 'Playfair Display SC', serif;
+$size-h1: 2.5rem;  
+$size-h2: 2rem;   
+$size-celular-h1: 1.8rem;  
+$size-celular-h2: 1.5rem;  
+
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Cuerpo */
+body {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-body;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: $color-texto !important;
+    transition: transform 0.3s !important;
+
+    &:hover {
+        transform: $link-hover-transform;
+    }
+}
+
+/* Encabezado */
+header {
+    background-color: $color-pagina;
+    padding: 0;
+    margin: 0;
+}
+
+.barranav {
+    background-color: $color-pagina;
+    color: $color-texto;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+}
+
+/* Elementos específicos */
+.buscar {
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: $color-pagina;
+    font-family: $fuente-pagina;
+}
+
+.boton {
+    background-color: transparent;
+    color: $color-texto;
+    border-color: $color-texto;
+
+    &:hover {
+        transform: scale(0.9);
+        border-color: $color-texto;
+    }
+}
+
+.titulo {
+    font-size: $size-h1;
+    padding: 0;
+    font-family: $fuente-pagina;
+    color: $color-texto;
+}
+
+.nav-color {
+    background-color: $color-pagina;
+    color: $color-texto;
+}
+
+/* Carrusel */
+.carrusel {
+    margin: 1.5em 0;
+}
+
+/* Cards */
+.h2 {
+    font-size: $size-h2;
+    font-family: $fuente-pagina;
+    color: $color-texto;
+    text-align: center;
+    margin: 1em;
+}
+
+.card {
+    margin: 1em;
+    padding: 0;
+    border: 1px solid $color-pagina;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    justify-content: space-around;
+}
+
+/* Footer */
+footer {
+    background-color: $color-footer;
+    color: $color-pagina;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        img {
+        margin: 0.5em;
+        }
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        margin: 0 1em;
+    }
+
+    .row img {
+        transition: transform 0.3s;
+        margin: 1em;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+/* Perfumes */
+.img-perfume {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.botones2 {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: auto;
+    width: 33% !important;
+    color: white !important;
+    background-color: green;
+
+    &:hover {
+        transform: scale(0.9) !important;
+        color: black !important;
+    }
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Precio {
+    color: $color-precio;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Ajustes para pantallas de celular */
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: $size-celular-h1;
+    }
+
+    h2 {
+        font-size: $size-celular-h2;
+    }
+}
