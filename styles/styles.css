@@ -4,6 +4,23 @@
     max-width: 100%;
 }
 
+body {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 0; 
+}
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 a{
     text-decoration: none;
     color: #4B3D25 !important;
@@ -22,6 +39,10 @@ header{
 .barranav{
     background-color:#F5F5DC;
     color: #4B3D25;
+}
+
+main {
+    flex: 1;
 }
 
 .buscar{
@@ -135,9 +156,42 @@ footer .row img:hover {
 
 .img-perfume{
     width: 100%;
-    height: 270px;
-    margin: auto;
-    object-fit: cover;
-    padding: 1em;
-    
+    height: 100%;
+    border-radius: 10px;
 }
+
+.row{
+    justify-content: center;
+}
+
+.botones2{
+    display: flex;
+    justify-content: center;
+    gap: 1em ;
+    margin: auto;
+    width: 33% !important;
+    color: white !important;
+    background-color: green;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 1em ;
+}
+
+.botones2:hover{
+    transform: scale(0.9) !important;
+    color:black !important;
+
+}
+
+.Precio{
+    color: rgb(1, 143, 1);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+
