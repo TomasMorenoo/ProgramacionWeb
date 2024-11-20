@@ -2,14 +2,14 @@
 $color-pagina: #d4c285;
 $color-body: white;
 $color-footer: #4B3D25;
-$color-texto: Black;
+$color-texto: black;
 $color-precio: rgb(1, 143, 1);
 $link-hover-transform: scale(1.1);
 $fuente-pagina: 'Playfair Display SC', serif;
-$size-h1: 2.5rem;  
-$size-h2: 2rem;   
-$size-celular-h1: 1.8rem;  
-$size-celular-h2: 1.5rem;  
+$size-h1: 2.5rem;
+$size-h2: 2rem;
+$size-celular-h1: 1.8rem;
+$size-celular-h2: 1.5rem;
 
 /* Reset básico */
 * {
@@ -32,7 +32,7 @@ body {
     background-color: $color-body;
 
     @media (min-width: 768px) {
-        padding-top: 0;
+    padding-top: 0;
     }
 }
 
@@ -141,7 +141,7 @@ footer {
         flex-direction: column;
 
         img {
-        margin: 0.5em;
+            margin: 0.5em;
         }
     }
 
@@ -149,6 +149,12 @@ footer {
         display: flex;
         justify-content: center;
         margin: 0 1em;
+
+        a img {
+            margin: 0 10px;
+            max-width: 40px; /* Ajusta el tamaño si es necesario */
+            display: inline-block;
+        }
     }
 
     .row img {
@@ -169,7 +175,10 @@ footer {
 }
 
 .row {
-    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Asegura que los elementos se acomoden al espacio disponible */
 }
 
 .botones2 {
@@ -200,7 +209,6 @@ footer {
 }
 
 /* Ajustes para pantallas de celular */
-
 @media (max-width: 576px) {
     h1 {
         font-size: $size-celular-h1;
@@ -209,4 +217,11 @@ footer {
     h2 {
         font-size: $size-celular-h2;
     }
+}
+
+/* Contenedor general */
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
 }

@@ -29,7 +29,7 @@ body {
 /* Enlaces */
 a {
   text-decoration: none;
-  color: Black !important;
+  color: black !important;
   transition: transform 0.3s !important;
 }
 a:hover {
@@ -45,7 +45,7 @@ header {
 
 .barranav {
   background-color: #d4c285;
-  color: Black;
+  color: black;
 }
 
 /* Contenido principal */
@@ -65,24 +65,24 @@ main {
 
 .boton {
   background-color: transparent;
-  color: Black;
-  border-color: Black;
+  color: black;
+  border-color: black;
 }
 .boton:hover {
   transform: scale(0.9);
-  border-color: Black;
+  border-color: black;
 }
 
 .titulo {
   font-size: 2.5rem;
   padding: 0;
   font-family: "Playfair Display SC", serif;
-  color: Black;
+  color: black;
 }
 
 .nav-color {
   background-color: #d4c285;
-  color: Black;
+  color: black;
 }
 
 /* Carrusel */
@@ -94,7 +94,7 @@ main {
 .h2 {
   font-size: 2rem;
   font-family: "Playfair Display SC", serif;
-  color: Black;
+  color: black;
   text-align: center;
   margin: 1em;
 }
@@ -136,6 +136,11 @@ footer .socialmedia {
   justify-content: center;
   margin: 0 1em;
 }
+footer .socialmedia a img {
+  margin: 0 10px;
+  max-width: 40px; /* Ajusta el tamaño si es necesario */
+  display: inline-block;
+}
 footer .row img {
   transition: transform 0.3s;
   margin: 1em;
@@ -152,7 +157,10 @@ footer .row img:hover {
 }
 
 .row {
-  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap; /* Asegura que los elementos se acomoden al espacio disponible */
 }
 
 .botones2 {
@@ -189,6 +197,12 @@ footer .row img:hover {
   h2 {
     font-size: 1.5rem;
   }
+}
+/* Contenedor general */
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
