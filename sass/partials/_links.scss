@@ -1,0 +1,10 @@
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: $color-texto !important;
+    transition: transform 0.3s !important;
+
+    &:hover {
+        transform: $link-hover-transform;
+    }
+}

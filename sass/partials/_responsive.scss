@@ -1,0 +1,17 @@
+/* Ajustes para pantallas de celular */
+@media (max-width: 576px) {
+    h1 {
+        font-size: $size-celular-h1;
+    }
+
+    h2 {
+        font-size: $size-celular-h2;
+    }
+}
+
+/* Contenedor general */
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+/* Cards */
+.h2 {
+    font-size: $size-h2;
+    font-family: $fuente-pagina;
+    color: $color-texto;
+    text-align: center;
+    margin: 1em;
+}
+
+.card {
+    margin: 1em;
+    padding: 0;
+    border: 1px solid $color-pagina;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    justify-content: space-around;
+}
+

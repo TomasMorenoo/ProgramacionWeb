@@ -1,0 +1,13 @@
+/* Cuerpo */
+body {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-body;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+}
+
+

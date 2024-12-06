@@ -1,0 +1,38 @@
+/* Footer */
+footer {
+    background-color: $color-footer;
+    color: $color-pagina;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin: 0.5em;
+        }
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        margin: 0 1em;
+
+        a img {
+            margin: 0 10px;
+            max-width: 40px;
+            display: inline-block;
+        }
+    }
+
+    .row img {
+        transition: transform 0.3s;
+        margin: 1em;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
