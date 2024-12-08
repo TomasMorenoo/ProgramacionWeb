@@ -1,11 +1,12 @@
-@import 'variables';
-@import 'reset';
-@import 'body';
-@import 'links';
-@import 'header';
-@import 'main';
-@import 'elements';
-@import 'cards';
-@import 'footer';
-@import 'perfumes';
-@import 'responsive';
+@import './partials/variables';
+@import './partials/reset';
+@import './partials/body';
+@import './partials/links';
+@import './partials/header';
+@import './partials/main';
+@import './partials/elements';
+@import './partials/cards';
+@import './partials/footer';
+@import './partials/perfumes';
+@import './partials/responsive';
+

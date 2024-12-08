@@ -1,4 +1,6 @@
 /* Ajustes para pantallas de celular */
+@import './variables';
+
 @media (max-width: 576px) {
     h1 {
         font-size: $size-celular-h1;
