@@ -52,6 +52,10 @@ header {
   color: black;
 }
 
+.link-foto:hover {
+  transform: scale(1.1);
+}
+
 /* Contenido principal */
 /* Variables */
 main {

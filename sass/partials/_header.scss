@@ -10,3 +10,8 @@ header {
     background-color: $color-pagina;
     color: $color-texto;
 }
+
+.link-foto:hover {
+    transform: scale(1.1);
+
+}
